@@ -1,0 +1,24 @@
+{
+  "plugins": ["react", "prettier"],
+  "extends": [
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-props-no-spreading": 2,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": "off"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {"jsx": true},
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {"version": "detect"}
+  }
+}
